@@ -22,7 +22,8 @@ This repository contains an AI agent that provides information about Supra Move 
 1. Locate this repository:
 
 ```bash
-   cd supra-agent
+git clone https://github.com/JatinSupra/SupraAstroAI-agent.git
+cd SupraAstroAI-agent
 ```
 
 2. Create a virtual environment and activate it:
