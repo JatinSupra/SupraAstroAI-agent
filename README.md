@@ -1,4 +1,4 @@
-# Supra AI Agent
+# Supra AI Agent: Robbie
 
 This repository contains an AI agent that provides information about Supra Move L1 chain and helps with testnet token funding using OpenAI's GPT-3.5-turbo model. The agent can be deployed on both Telegram and Twitter.
 
@@ -48,10 +48,6 @@ pip install openai==0.28 requests python-dotenv python-telegram-bot tweepy
 ```
 TELEGRAM_BOT_TOKEN=your-telegram-bot-token
 OPENAI_API_KEY=your-openai-api-key
-TWITTER_API_KEY=your-twitter-api-key
-TWITTER_API_SECRET_KEY=your-twitter-api-secret-key
-TWITTER_ACCESS_TOKEN=your-twitter-access-token
-TWITTER_ACCESS_TOKEN_SECRET=your-twitter-access-token-secret
 ```
 
 ### Running the AI Agent on Telegram
@@ -59,14 +55,6 @@ Run the Telegram bot script:
 
 ```bash
 python telegram_bot.py
-```
-
-**NOTE:** To keep your Twitter bot running continuously, you can use a process manager like `npm install -g pm2` and follow Instructions OR deploy it on a cloud service.
-
-### Running the AI Agent on Twitter
-
-```bash
-python twitter_bot.py
 ```
 
 **NOTE:** To keep your Twitter bot running continuously, you can use a process manager like `npm install -g pm2` and follow Instructions OR deploy it on a cloud service.
