@@ -3,13 +3,13 @@ from supra_agent import SupraAgent
 import os
 from dotenv import load_dotenv
 
-# Load environment variables from .env file where OPENAI_API_KEY is stored which you can geneate from README file I made.
+# Load environment variables from .env file where OPENAI_API_KEY is stored
 load_dotenv()
 
-# Initialize the Flask application and the agent to start the web app.
+# Initialize the Flask application and the agent
 app = Flask(__name__)
 
-# Serve static files from the 'static' directory where you will store the image of robbie the bot.
+# Serve static files from the 'static' directory
 app.config['STATIC_FOLDER'] = 'static'
 
 agent = SupraAgent()
@@ -30,7 +30,7 @@ def get_response():
 def get_tokens():
     wallet_address = request.json.get('wallet_address')
     print(f"Wallet Address: {wallet_address}")
-    response = agent.fund_account_with_faucet(wallet_address)
+    response = agent.request_faucet_tokens(wallet_address)
     print(f"Faucet Response: {response}")
     if "Error" not in response:
         return jsonify({'response': f"Testnet tokens have been sent to your wallet address: {wallet_address}"})
