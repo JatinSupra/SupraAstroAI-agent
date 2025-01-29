@@ -15,7 +15,6 @@ This repository contains an AI agent that provides information about Supra Move 
 - Python 3.6 or higher
 - OpenAI API key
 - Telegram Bot token
-- Twitter API keys and tokens
 
 ### Installation
 
@@ -55,6 +54,13 @@ Run the Telegram bot script:
 
 ```bash
 python telegram_bot.py
+```
+
+## Running the Frontend to Interact with Agent
+Run the below script:
+
+```bash
+python app.py
 ```
 
 **NOTE:** To keep your Twitter bot running continuously, you can use a process manager like `npm install -g pm2` and follow Instructions OR deploy it on a cloud service.
